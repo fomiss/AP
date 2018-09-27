@@ -59,9 +59,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(449, 60);
+            this.button1.Location = new System.Drawing.Point(280, 60);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 23);
+            this.button1.Size = new System.Drawing.Size(330, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "Определить прикрепление";
             this.button1.UseVisualStyleBackColor = true;
@@ -126,7 +126,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Attached Population";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
