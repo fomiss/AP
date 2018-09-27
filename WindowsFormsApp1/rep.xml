@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data-set xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<record>
+		<sumd>7</sumd>
+		<sum>17 097.120</sum>
+		<ser>0</ser>
+		<enp>3654220891000090</enp>
+	</record>
+	<record>
+		<sumd>5</sumd>
+		<sum>18 567.840</sum>
+		<ser>0</ser>
+		<enp>3654220891000090</enp>
+	</record>
+	<record>
+		<sumd>5</sumd>
+		<sum>17 816.400</sum>
+		<ser>0</ser>
+		<enp>3656710890000040</enp>
+	</record>
+	<record>
+		<sumd>4</sumd>
+		<sum>17 816.400</sum>
+		<ser>0</ser>
+		<enp>3650910869000010</enp>
+	</record>
+</data-set>
