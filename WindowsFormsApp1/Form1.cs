@@ -74,14 +74,19 @@ namespace WindowsFormsApp1
                         dr["SERNUMPOLICYOMS"] = carValues[5];
                         dr["IDINSURER"] = carValues[6];
                         dr["SUMMACCOUNT"] = carValues[7];
-                        //добавляем строку в таблицу
-                         t = 3; sp = ""; np = carValues[5];
-                        /*if (carValues[7] == "" && carValues[6] !="")
-                        { t = 2; sp = ""; np = carValues[6]+carValues[5]; }*/
+                        if (carValues[3].Length < 5) carValues[3] = "0" + carValues[3];
+                         //добавляем строку в таблицу
+                        if (carValues[5] != "")
+                           { t = 3; sp = ""; np = carValues[5]; }
+                        if (carValues[5] == "" && carValues[3] !="0")
+                           { t = 2; sp = ""; np = carValues[4] + carValues[3]; }
                         
                         ServiceReference1.InsurerDoc ins = client.GetInsurerDOC(t, sp, np, "");
-                         //MessageBox.Show(ins.MO);
-                         //MessageBox.Show(carValues[5]);
+                         
+                         MessageBox.Show(carValues[3]);
+                         MessageBox.Show(carValues[4]);
+                         MessageBox.Show(carValues[5]);
+                         MessageBox.Show(ins.MO);
                         dr["PR"] = ins.MO;
                         //carValues[8] = ins.MO;
                         dt.Rows.Add(dr);
