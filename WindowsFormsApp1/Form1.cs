@@ -83,9 +83,9 @@ namespace WindowsFormsApp1
                          //MessageBox.Show(ins.MO);
                          //MessageBox.Show(carValues[5]);
                         dr["PR"] = ins.MO;
-                        carValues[8] = ins.MO;
+                        //carValues[8] = ins.MO;
                         dt.Rows.Add(dr);
-                        t++;
+                        
                     }
                 }
 
