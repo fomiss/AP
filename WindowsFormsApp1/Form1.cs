@@ -66,24 +66,24 @@ namespace WindowsFormsApp1
                         carValues = cars[i].Split(';');
                         //создаём новую строку
                         dr = dt.NewRow();
-                        dr["DATBEGVST"] = carValues[2];
-                        dr["DATENDVST"] = carValues[3];
-                        dr["CNTDAYS"] = carValues[4];
-                        dr["NUMPULIS"] = carValues[5];
-                        dr["SERPOLIS"] = carValues[6];
-                        dr["SERNUMPOLICYOMS"] = carValues[7];
-                        dr["IDINSURER"] = carValues[8];
-                        dr["SUMMACCOUNT"] = carValues[1];
+                        dr["DATBEGVST"] = carValues[0];
+                        dr["DATENDVST"] = carValues[1];
+                        dr["CNTDAYS"] = carValues[2];
+                        dr["NUMPULIS"] = carValues[3];
+                        dr["SERPOLIS"] = carValues[4];
+                        dr["SERNUMPOLICYOMS"] = carValues[5];
+                        dr["IDINSURER"] = carValues[6];
+                        dr["SUMMACCOUNT"] = carValues[7];
                         //добавляем строку в таблицу
-                         t = 3; sp = ""; np = carValues[7];
+                         t = 3; sp = ""; np = carValues[5];
                         /*if (carValues[7] == "" && carValues[6] !="")
                         { t = 2; sp = ""; np = carValues[6]+carValues[5]; }*/
                         
                         ServiceReference1.InsurerDoc ins = client.GetInsurerDOC(t, sp, np, "");
-                         // MessageBox.Show(ins.MO);
-                      //MessageBox.Show(carValues[7]);
+                         //MessageBox.Show(ins.MO);
+                         //MessageBox.Show(carValues[5]);
                         dr["PR"] = ins.MO;
-                        carValues[9] = ins.MO;
+                        carValues[8] = ins.MO;
                         dt.Rows.Add(dr);
                         t++;
                     }
