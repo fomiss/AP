@@ -83,10 +83,10 @@ namespace WindowsFormsApp1
                         
                         ServiceReference1.InsurerDoc ins = client.GetInsurerDOC(t, sp, np, "");
                          
-                         MessageBox.Show(carValues[3]);
+                        /* MessageBox.Show(carValues[3]);
                          MessageBox.Show(carValues[4]);
                          MessageBox.Show(carValues[5]);
-                         MessageBox.Show(ins.MO);
+                         MessageBox.Show(ins.MO);*/
                         dr["PR"] = ins.MO;
                         //carValues[8] = ins.MO;
                         dt.Rows.Add(dr);
